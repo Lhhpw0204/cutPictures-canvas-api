@@ -118,10 +118,10 @@ export default {
                     clearInterval(widthTimer);
                 }
             },100);
-        retCanvas.toBlob(function(){
+        retCanvas.toBlob(function(blob){
             var formData = new FormData(),
                 httpDemo = new XMLHttpRequest();
-            formData.append("imgnum",self.imgData);
+            formData.append("上传文件",blob);
 
             httpDemo.timeout = 10000;
             //请求完成后执行的操作

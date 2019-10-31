@@ -133,7 +133,7 @@ export default {
             httpDemo.ontimeout = function () {
                 clearInterval(widthTimer);
             }
-            httpDemo.open("post","https://user.intechtrading.com/api/Overseas/setOpenAcountInfo.ashx?action=addressphoto&proxyid=160&usertoken=DiB4pC5S2kL2jzGK4dkGB8rej9PVlVICxhnLihj5HUC6u5dGfzEaOSDJbJUOk8PjTOxxfMQxqAOjYkn6R6GMfQgPAEHArsKewycYkCNff2Wz7MqCuTaKJw**&lang=en",true);
+            httpDemo.open("post",url,true);
             httpDemo.send(formData);
         });
       }
